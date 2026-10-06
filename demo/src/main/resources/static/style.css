@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #7fc35f;
+}
+
+.login-container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 395px;
+    min-height: 320px;
+
+    background: white;
+
+    padding: 50px;
+
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+input {
+    width: 100%;
+
+    padding: 16px;
+
+    margin-bottom: 17px;
+
+    border: none;
+
+    background: #f1f1f1;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+input:focus {
+    background: #e8e8e8;
+}
+
+button {
+    width: 100%;
+
+    padding: 17px;
+
+    border: none;
+
+    background: #50b34f;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #429b42;
+}
+
+.register-text {
+    text-align: center;
+
+    margin-top: 17px;
+
+    color: #b5b5b5;
+
+    font-size: 14px;
+}
+
+.register-text a {
+    color: #50b34f;
+
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+#loginMessage {
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+}
+.title {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    background: #f4f6f8;
+}
+
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 230px;
+    background: #292d32;
+    color: white;
+    min-height: 100vh;
+}
+
+.logo {
+    padding: 25px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background: #202328;
+}
+
+.menu-title {
+    padding: 20px 20px 8px;
+    font-size: 11px;
+    color: #999;
+}
+
+.menu {
+    display: block;
+    padding: 14px 20px;
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu:hover {
+    background: #3a3f45;
+    color: white;
+}
+
+.menu.active {
+    background: #50b34f;
+    color: white;
+}
+
+.logout {
+    margin-top: 20px;
+}
+
+
+/* MAIN */
+
+.main-content {
+    flex: 1;
+}
+
+
+/* TOP BAR */
+
+.topbar {
+    height: 75px;
+    background: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 30px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.topbar h2 {
+    margin: 0;
+}
+
+.topbar p {
+    margin: 5px 0;
+    color: #888;
+}
+
+.admin-user {
+    color: #555;
+}
+
+
+/* CONTENT */
+
+.content {
+    padding: 30px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header h2 {
+    margin-bottom: 5px;
+}
+
+.page-header p {
+    color: #888;
+    margin-top: 0;
+}
+
+
+/* BUTTON */
+
+.add-button {
+    background: #50b34f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background: #429b42;
+}
+
+
+/* SEARCH */
+
+.search-box {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    margin: 0;
+}
+
+.search-box button {
+    width: 120px;
+}
+
+
+/* TABLE */
+
+.table-container {
+    background: white;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #343a40;
+    color: white;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background: #f8f8f8;
+}
+
+
+/* ACTION BUTTONS */
+
+.view-button,
+.edit-button,
+.delete-button {
+    width: auto;
+    padding: 7px 12px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.view-button {
+    background: #2196f3;
+}
+
+.edit-button {
+    background: #ffc107;
+    color: #222;
+}
+
+.delete-button {
+    background: #ef5350;
+}
+
+.view-button:hover {
+    background: #1976d2;
+}
+
+.edit-button:hover {
+    background: #e0a800;
+}
+
+.delete-button:hover {
+    background: #d32f2f;
+}

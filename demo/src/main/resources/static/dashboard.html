@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                ADMIN PANEL
+            </div>
+
+            <div class="menu-title">
+                MAIN MENU
+            </div>
+
+            <a href="#" class="menu active">
+                🏠 Dashboard
+            </a>
+
+            <!-- <a href="#" class="menu">
+                👤 Users
+            </a>
+
+            <a href="#" class="menu">
+                ⚙ Settings
+            </a> -->
+
+            <div class="menu-title">
+                ACCOUNT
+            </div>
+
+            <a href="index.html" class="menu logout">
+                🚪 Logout
+            </a>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+
+        <main class="main-content">
+
+            <!-- TOP BAR -->
+
+            <header class="topbar">
+
+                <div>
+                    <h2>Dashboard</h2>
+                    <p>Welcome to User Management</p>
+                </div>
+
+                <div class="admin-user">
+                    👤 Admin
+                </div>
+
+            </header>
+
+
+            <!-- CONTENT -->
+
+            <section class="content">
+
+                <!-- <div class="page-header">
+
+                    <div>
+                        <h2>Users</h2>
+                        <p>Manage registered users</p>
+                    </div>
+
+                    <button class="add-button">
+                        + ADD NEW
+                    </button>
+
+                </div> -->
+
+
+                <!-- SEARCH -->
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search username..."
+                    >
+
+                    <button onclick="searchUsers()">
+                        SEARCH
+                    </button>
+
+                </div>
+
+
+                <!-- USER TABLE -->
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>ID</th>
+                                <th>USERNAME</th>
+                                <th>ACTION</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="userTable">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
